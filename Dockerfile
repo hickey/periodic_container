@@ -1,5 +1,5 @@
 FROM alpine
-MAINTAINER Gerard Hickey <Gerard.Hickey@smartsheet.com>
+MAINTAINER Gerard Hickey <hickey@kinetic-compute.com>
 
 RUN apk update && apk add ruby curl jq && \
     gem install semi --no-ri --no-rdoc && \
