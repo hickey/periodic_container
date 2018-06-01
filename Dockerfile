@@ -1,7 +1,7 @@
 FROM alpine
 MAINTAINER Gerard Hickey <hickey@kinetic-compute.com>
 
-RUN apk update && apk add ruby curl jq && \
+RUN apk update && apk add ruby curl jq logrotate && \
     gem install semi --no-ri --no-rdoc && \
     mkdir -p /data/crontabs
 
